@@ -14,10 +14,12 @@ body {
     color: blue;
 }
 
+/* Home.html */
+
 .textstuff {
     font-family: sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .textstuff h1 {
@@ -28,3 +30,35 @@ body {
 .textstuff p {
     font-size: 20px;
 }
+
+/* About.html */
+
+.about_text  {
+    font-family: sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about_text h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.about_text p {
+    font-size: 20px;
+}
+
+.robotics {
+    font-family: sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.robotics h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Projects.html */
+
+/* Contact.html */
