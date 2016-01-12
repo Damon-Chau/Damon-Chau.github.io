@@ -1,38 +1,30 @@
 body {
-	background-color: #f2f2f2;
-}
-
-.nav {
-	background-color: #ff9900;
-	padding: 10px;
+    background-color: #f2f2f2;
 }
 
 .nav li {
-	display: inline;
-	font-size: 40px;
-	word-spacing: 10px;
+    display: inline;
+    font-size: 30px;
+    word-spacing: 10px;
 }
 
 .nav a {
-	text-decoration: none;
-	font-family: sans-serif;
-	color: blue;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: blue;
+}
+
+.textstuff {
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .textstuff h1 {
-	color: #1a1a1a;
-	font-size: 60px;
-	font-family: sans-serif;
-	font-weight: bold;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .textstuff p {
-	font-size: 20px;
-	font-family: sans-serif;
-}
-
-/* jQuery CSS */
-
-.mouseover {
-	text-decoration: underline;
+    font-size: 20px;
 }
