@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+
+    <head>
+
+		<title>Damon | Home</title>
+
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	</head>
+
+	<body>
+
+        <div class ="nav">
+        	
+        	<div class ="container">
+	        	<ul>
+	        		<li> <a href = "Home.html">Home</a> </li>
+	        		<li> <a href = "About.html">About</a> </li>
+	        		<li> <a href = "Projects.html">Projects</a> </li>
+	        		<li> <a href = "Contact.html">Contact</a> </li>
+	        	</ul>
+	        </div>
+
+        </div>
+
+        <div class = "textstuff">
+        	<h1>Home</h1>
+
+        	<p>My name is Damon Chau. Welcome to my website!</p>
+
+        	<p>Feel free to check out all my work and contact information here</p>
+
+        <script>
+			$(document).ready(function(){
+    			$("a").mouseenter(function(){
+    				$("a").addClass("mouseover");
+    			});
+			});
+		</script>
+
+	</body>
+
+</html>
