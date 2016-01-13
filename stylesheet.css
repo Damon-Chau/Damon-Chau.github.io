@@ -61,4 +61,15 @@ body {
 
 /* Projects.html */
 
+.project_text {
+    font-family: sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.project_text h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
 /* Contact.html */
