@@ -1,25 +1,39 @@
-body {
-    background-color: #f2f2f2;
+.nav {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    width:15%;
+    background-color: #0033cc;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 5%;
+    margin: 0;
 }
 
 .nav li {
-    display: inline;
-    font-size: 30px;
-    word-spacing: 10px;
+    margin: 10px;
 }
 
-.nav a {
-    text-decoration: none;
+.nav a{
     font-family: sans-serif;
-    color: blue;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+body {
+    background-color: #f0f0f5;
 }
 
 /* Home.html */
 
 .textstuff {
     font-family: sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 17.5%;
+    margin-right: 35%;
 }
 
 .textstuff h1 {
@@ -35,8 +49,8 @@ body {
 
 .about_text  {
     font-family: sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 17.5%;
+    margin-right: 35%;
 }
 
 .about_text h1 {
@@ -44,14 +58,10 @@ body {
     font-weight: bold;
 }
 
-.about_text p {
-    font-size: 20px;
-}
-
 .robotics {
     font-family: sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 17.5%;
+    margin-right: 35%;
 }
 
 .robotics h1 {
@@ -63,8 +73,8 @@ body {
 
 .project_text {
     font-family: sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 17.5%;
+    margin-right: 35%;
 }
 
 .project_text h1 {
