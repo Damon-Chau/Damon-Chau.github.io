@@ -5,3 +5,9 @@
 .nav ul a:hover {
     text-decoration: underline;
 }
+
+.content #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

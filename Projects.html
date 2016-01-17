@@ -8,12 +8,20 @@
     <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- jQuery Resources -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
     <!-- Foundation Resources -->
     <link rel = "stylesheet" href = "foundation-6\css\foundation.min.css">
     <script src = "foundation-6\js\foundation.min.js"></script>
+
+    <!-- owl-carousel assets -->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- jQuery Resources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- owl-carousel javascript -->
+    <script src="owl-carousel/owl.carousel.js"></script>
+
 </head>
 <body>
 
@@ -34,12 +42,39 @@
     <div class = "content">
         <div class = "medium-9 large-6 columns">
             <h2>Projects</h2>
+
+            <div id="owl-demo" class="owl-carousel">
+                <div class="item"><img src="owl-carousel/assets/fullimage1.jpg" alt="The Last of us"></div>
+                <div class="item"><img src="owl-carousel/assets/fullimage2.jpg" alt="GTA V"></div>
+                <div class="item"><img src="owl-carousel/assets/fullimage3.jpg" alt="Mirror Edge"></div>
+                <div class="item"><img src="owl-carousel/assets/fullimage4.jpg" alt="Mirror Edge"></div>
+            </div>
+
         </div>
     </div>
-
     <script src = "foundation-6\js\vendor\jquery.min.js"></script>
     <script src = "foundation-6\js\foundation.min.js"></script>
     <script src = "foundation-6\js\foundation.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+
+                navigation : true,
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                singleItem : true
+
+                // "singleItem:true" is a shortcut for:
+                // items : 1,
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
+
+            });
+        });
+    </script>
 
 </body>
 </html>
