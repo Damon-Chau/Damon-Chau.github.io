@@ -17,25 +17,27 @@
 </head>
 <body>
 
+    <!-- jQuery Resources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src = "foundation-6\js\foundation.js"></script>
+    <!--jQuery resources end-->
+
     <div class = "nav">
-        <div class="top-bar">
+        <div class="title-bar" data-responsive-toggle="dropmenu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">Damon Chau</div>
+        </div>
+
+        <div class="top-bar" id="dropmenu">
             <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="menu-text">Damon Chau</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About Me</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href = "Contact.html">Contact</a></li>
+                <ul class = "dropdown menu" data-dropdown-menu>
+                    <li class = "menu-text">Damon Chau</li>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "About.html">About Me</a></li>
+                    <li><a href = "Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </div>
-            <!--
-            <div class = "top-bar-right">
-                <ul class="menu">
-                    <li><a href="resumeDamonChau.pdf"></a></li>
-                    <li><a href="https://github.com/Damon-Chau" target="_blank"><i class="fa fa-github fa-lg"></a></li>
-                    <li><a href="ca.linkedin.com/in/damonhmchau" target="_blank"><i class="fa fa-linkedin-square fa-lg"></a></li>
-                </ul>
-            </div>-->
         </div>
     </div>
 
@@ -45,12 +47,13 @@
 
             <p>If you got any questions, don't hesitate to:
             <ul>
-                <li>Send me an email at <a href="mailto:damon.hmchau@gmail.com">damon.hmchau@gmail.com</a></li>
                 <li>Read me <a href="resumeDamonChau.pdf" target="_blank">Resume</a></li>
                 <li>Check out my <a href="ca.linkedin.com/in/damonhmchau" target="_blank">LinkedIn</a></li>
                 <li>Look at my <a href="https://github.com/Damon-Chau" target="_blank">Github</a></li>
             </ul>
             </p>
+
+            <p>If all else fails, Send me an email at <a href="mailto:damon.hmchau@gmail.com">damon.hmchau@gmail.com</a></p>
 
             </form>
 
@@ -62,9 +65,10 @@
 
     </div>
 
-    <script src = "foundation-6\js\vendor\jquery.min.js"></script>
-    <script src = "foundation-6\js\foundation.min.js"></script>
-    <script src = "foundation-6\js\foundation.js"></script>
-
+    <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        });
+    </script>
 </body>
 </html>

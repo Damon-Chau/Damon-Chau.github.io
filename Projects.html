@@ -10,30 +10,34 @@
 
     <!-- Foundation Resources -->
     <link rel = "stylesheet" href = "foundation-6\css\foundation.min.css">
-    <script src = "foundation-6\js\foundation.min.js"></script>
 
     <!-- owl-carousel assets -->
     <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="owl-carousel/owl.theme.css" rel="stylesheet">
 
-    <!-- jQuery Resources -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-    <!-- owl-carousel javascript -->
-    <script src="owl-carousel/owl.carousel.js"></script>
-
 </head>
 <body>
 
+    <!-- jQuery Resources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script src = "foundation-6\js\foundation.js"></script>
+    <!--jQuery resources end-->
+
     <div class = "nav">
-        <div class="top-bar">
+        <div class="title-bar" data-responsive-toggle="dropmenu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">Damon Chau</div>
+        </div>
+
+        <div class="top-bar" id="dropmenu">
             <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="menu-text">Damon Chau</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About Me</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href = "Contact.html">Contact</a></li>
+                <ul class = "dropdown menu" data-dropdown-menu>
+                    <li class = "menu-text">Damon Chau</li>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "About.html">About Me</a></li>
+                    <li><a href = "Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +51,6 @@
                 <div class="item"><a href = "http://www.thelastofus.playstation.com/index.html" target = "_blank"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage1.jpg"></a></div>
                 <div class="item"><a href = "http://www.rockstargames.com/V/" target = "_blank"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage2.jpg"></a></div>
                 <div class="item"><a href = "http://www.mirrorsedge.com/" target = "_blank"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage3.jpg"></a></div>
-                <div class="item-video"><a class="owl-video" href="https://www.youtube.com/watch?v=KDIAGsCOWD8"></a></div>
             </div>
 
             <p>Temporary placeholder. Used this to check that owl-carousel works.</p>
@@ -59,7 +62,12 @@
 
     <script>
         $(document).ready(function() {
-            $("#owl-demo").owlCarousel({
+
+            $(document).foundation();
+
+            var owl = $("#owl-demo")
+
+            owl.owlCarousel({
 
                 navigation : true,
                 slideSpeed : 300,
@@ -72,10 +80,6 @@
                 // itemsDesktopSmall : false,
                 // itemsTablet: false,
                 // itemsMobile : false
-
-                video: true,
-                videoWidth: false,
-                videoHeight: false
 
             });
         });
