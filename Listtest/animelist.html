@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- Chrome extension for keeping track of what animes and mangas you've read/ watched or are reading/watching
+as well as what you may or may not want to watch in the future -->
+<html ng-app = "myApp">
+
+<head>
+
+	<title>Anime/Manga Popup</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body ng-controller="MainCtrl">
+
+	<input ng-model="searchfield"><button ng-click="animesearch()">Search</button><br><br>
+
+ 	<table>
+	  	<tr>
+	  		<td>Anime</td>
+	  		<td>Synopsis</td>
+	  		<td>Rating</td>
+	  		<td>Status</td>
+	  	</tr>
+	  	<tr ng-repeat="anime in animes | orderBy : 'Name'">
+	  		<td>{{ anime.Name }}</td>
+	  		<td>{{ anime.Summary }}</td>
+	  		<td>{{ anime.Rating }}</td>
+	  		<td>{{ anime.Status }}</td>
+	  	</tr>
+ 	</table>
+ 	<br>
+ 	<button ng-click="addAnimeRow()">Add Anime</button>
+
+ 	<br><br>
+
+ 	<!--
+ 	<table>
+	  	<tr>
+	  		<td><a href="http://www.google.com" target="_blank">Manga</a></td>
+	  		<td>Synopsis</td>
+	  		<td>Rating</td>
+	  		<td>Status</td>
+	  	</tr>
+	  	<tr ng-repeat="manga in mangas | orderBy: 'Name'">
+	  		<td>{{ manga.Name }}</td>
+	  		<td>{{ manga.Summary }}</td>
+	  		<td>{{ manga.Rating }}</td>
+	  		<td>{{ manga.Status }}</td>
+	  	</tr>
+ 	</table>
+	
+ 	<button ng-click="AddMangaRow()">Add Manga</button>-->
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animemanga.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+
+	"name": "Anime/Manga List",
+	"description": "This extension keeps a list of animes you've watched or mangas you've read as well as things you want to watch in the future",
+	"version": "0.1",
+
+	"browser_action": {
+		"default_icon": "icon.ico",
+		"default_popup": "index.html"
+	},
+	"permissions": [
+		"activeTab",
+		"https://ajax.googleapis.com/",
+		"http://myanimelist.net/"
+	]
+}

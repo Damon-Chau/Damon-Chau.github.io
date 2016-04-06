@@ -21,12 +21,12 @@
     <div class = "nav">
         <div class="title-bar" data-responsive-toggle="dropmenu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle></button>
-            <div class="title-bar-title">Damon Chau</div>
+            <div class="title-bar-title">Menu</div>
         </div>
 
         <div class="top-bar" id="dropmenu">
             <div class="top-bar-left">
-                <ul class = "dropdown menu" data-dropdown-menu>
+                <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
                     <li class = "menu-text">Damon Chau</li>
                     <li><a href = "index.html">Home</a></li>
                     <li><a href = "About.html">About Me</a></li>
@@ -43,9 +43,7 @@
 
             <ul class="tabs" data-tabs id="example-tabs">
                 <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Introduction</a></li>
-                <li class="tabs-title"><a href="#panel2">Robotics</a></li>
-                <li class="tabs-title"><a href="#panel3">Games</a></li>
-                <li class="tabs-title"><a href="#panel4">TV Shows</a></li>
+                <li class="tabs-title"><a href="#panel2">TV Shows</a></li>
             </ul>
             <div class="tabs-content" data-tabs-content="example-tabs">
                 <div class="tabs-panel is-active" id="panel1">
@@ -60,21 +58,40 @@
                     I like to think of it as LEGO blocks where each LEGO block represents the products of different
                     streams of engineering and the person putting it all together to make some sort of design.
                     </p>
+                    <p>
+                    This section of my website talks about my random interests. Take a look!
+                    </p>
                 </div>
                 <div class="tabs-panel" id="panel2">
                     <p>
-
+                        There are a number of Movies and TV Shows that I absolutely love watching.
                     </p>
-                </div>
-                <div class="tabs-panel" id="panel3">
-                    <p>
-
-                    </p>
-                </div>
-                <div class="tabs-panel" id="panel4">
-                    <p>
-
-                    </p>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>URL</th>
+                            <th>Short Summary</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -84,6 +101,10 @@
         $(document).ready(function() {
             $(document).foundation();
         });
+
+        movielist = [];
+
+
     </script>
 
 
