@@ -21,14 +21,23 @@ app.controller('MainCtrl', function($scope) {
 		//	console.log(data);
 		//});
 
+		function make_base_auth(user, password) {
+			var tok = user + ":" + password;
+			var hash = Base64.encode(tok);
+			return "Basic " + hash;
+		}
+
+		var basicAuth = make_base_auth("072665995", "biostarz77ke")
+
 		$.ajax({
 			url: $scope.url,
 			beforeSend: function(xhr) {
-				xhr.setRequestHeader("Authorization", "Basic" + btoa("072665995:biostarz77ke"));
+				xhr.setRequestHeader("Authorization", basicAuth);
 			},
 			type: 'GET',
 			dataType: 'xml',
-			processData: false,
+			crossDomain: true,
+			//processData: false,
 			success: function(data) {
 				console.log(data);
 			},
