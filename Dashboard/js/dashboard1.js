@@ -13,12 +13,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state('dashboard', {
             url: '/dashboard',
-            views: {
-                '': {
-                    templateUrl: 'templates/dashboard.html',
-                    controller: 'DashboardCtrl'
-                }
-            }
+            //views: {
+            //    '': {
+            templateUrl: 'templates/dashboard.html',
+            controller: 'DashboardCtrl'
+            //    }
+            //}
         });
     $urlRouterProvider.otherwise('/');
 });
