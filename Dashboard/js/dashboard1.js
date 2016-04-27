@@ -36,10 +36,9 @@ app.run(function ($rootScope, $location, Session){
 
 app.controller("LoginCtrl", function ($scope) {
     $scope.clientid = "227KY6";
-    //$scope.website = "3lol4";
 
     $scope.authenticate = function () {
-        var url = "https://www.fitbit.com/oauth2/authorize?client_id=" + $scope.clientid + "&response_type=token&scope=activity%20profile&expires_in=2592000";
+        var url = "https://www.fitbit.com/oauth2/authorize?client_id=227KY6&response_type=token&scope=activity%20profile&expires_in=2592000";
         // debugging purposes
         console.log(url);
 
