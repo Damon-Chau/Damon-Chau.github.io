@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49065327-1485-4ef3-b07a-7e911af29407" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dashboard/dashboard.css" afterPath="$PROJECT_DIR$/Dashboard/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dashboard/templates/login.html" afterPath="$PROJECT_DIR$/Dashboard/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dashboard/js/dashboard1.js" afterPath="$PROJECT_DIR$/Dashboard/js/dashboard1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oauth_callback.html" afterPath="$PROJECT_DIR$/oauth_callback.html" />
     </list>
     <ignored path="Website v2.iws" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard1.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dashboard/js/dashboard1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+            <state relative-caret-position="725">
+              <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
               <folding>
                 <element signature="e#1605#2793#0" expanded="false" />
               </folding>
@@ -61,14 +61,14 @@
       <file leaf-file-name="oauth_callback.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oauth_callback.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dashboard/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -118,10 +118,10 @@
         <option value="$PROJECT_DIR$/Listtest/js/animemanga.js" />
         <option value="$PROJECT_DIR$/Dashboard/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/Dashboard/dash.html" />
-        <option value="$PROJECT_DIR$/Dashboard/js/dashboard1.js" />
-        <option value="$PROJECT_DIR$/oauth_callback.html" />
         <option value="$PROJECT_DIR$/Dashboard/dashboard.css" />
         <option value="$PROJECT_DIR$/Dashboard/templates/login.html" />
+        <option value="$PROJECT_DIR$/oauth_callback.html" />
+        <option value="$PROJECT_DIR$/Dashboard/js/dashboard1.js" />
       </list>
     </option>
   </component>
@@ -292,12 +292,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1452623069107</updated>
-      <workItem from="1461793108919" duration="3898000" />
+      <workItem from="1461793108919" duration="3998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3898000" />
+    <option name="totallyTimeSpent" value="3998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -675,24 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dashboard/js/dashboard1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
-          <folding>
-            <element signature="e#1605#2793#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oauth_callback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dashboard/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-74">
@@ -714,6 +696,24 @@
         <state relative-caret-position="51">
           <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth_callback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dashboard/js/dashboard1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+          <folding>
+            <element signature="e#1605#2793#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

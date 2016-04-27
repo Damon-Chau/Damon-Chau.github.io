@@ -143,6 +143,8 @@ app.factory("Session", function () {
         account_user_id = JSON.parse(window.localStorage.getItem("fitbit")).oauth.account_user_id;
     }
 
+    console.log(access_token)
+    
     return {
         accessToken:access_token,
         expiresIn: expires_in,
