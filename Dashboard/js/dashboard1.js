@@ -50,7 +50,9 @@ app.controller("DashboardCtrl", function ($rootscope, $scope, $http, $location, 
     $scope.base_date = "";
     $scope.end_date = "";
 
-    //if ($rootScope.isLoggedIn()) {
+    if ($rootScope.isLoggedIn()) {
+
+        console.log($rootScope.isLoggedIn())
 
         // switch statement to display which month
         function monthswitch (month_value) {
@@ -125,7 +127,7 @@ app.controller("DashboardCtrl", function ($rootscope, $scope, $http, $location, 
                 $scope.data = response.data.activities-heart.value.heartRateZones;
             });
         }
-    //}
+    }
 
 
 });
