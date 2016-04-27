@@ -1,0 +1,77 @@
+<!-- dashboard.html -->
+<div>
+	<div class = "forminputs">
+		<form ng-submit="infosubmit()">
+			Starting Date (yyyy-MM-dd) : <br><input required class="input" ng-model="base_date" type="text">
+			<br><br>
+			Ending Date (yyyy-MM-dd) :<br><input required class="input" ng-model="end_date" type="text">
+			<!-- Plan to put a checkbox for today but I need to figure out how to make it so that if you manually put something into ending date, then checkbox will be disabled. If Ending date field is empty, then checkbox can be clicked again. -->
+			<br><br>
+			<input class="submit" type="submit">
+		</form>
+	</div>
+
+	<div class="content">
+		<div class="header">
+
+			<h1>Heart Rate Dashboard</h1>
+			<p>To use this dashboard, you will need a Fitbit Charge HR and a wrist.
+			<a id="showlink" class="showhide" href="" ng-click="showme=!showme">Show</a></p>
+			<div class="wrapper ng-cloak">
+				<div ng-show="showme">
+					<p><b>Instructions:</b></p>
+					<ol>
+						<li>Acquire a Fitbit Charge HR</li>
+						<li>Make sure you have a wrist</li>
+						<li>Make an account with Fitbit and register your device <a id="fitbitlink" href="https://dev.fitbit.com/login" target="_blank">here</a></li>
+						<li>Enter the User ID into the dashboard on the left</li>
+						<li>Enter a starting date and ending date in the format of yyyy-MM-dd</li>
+						<li>Submit and wait for the Fitbit API. Then view the data in the table and graph</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class = "main">
+			<p>Dashboard stuff here. Use a table and graph?</p>
+
+			Start Date: {{ basedate_format }} <br>
+			End Date: {{ enddate_format }} <br><br>
+
+			<!--Table-->
+			<table id="dataTable">
+				<tr>
+					<th>Calories Out</th>
+					<th>Maximum</th>
+					<th>Minimum</th>
+					<th>Minutes</th>
+					<th>Name</th>
+				</tr>
+				<tr ng-repeat="item in data">
+					<td>{{ item.caloriesOut }}</td>
+					<td>{{ item.max }}</td>
+					<td>{{ item.min }}</td>
+					<td>{{ item.minutes }}</td>
+					<td>{{ item.name }}</td>
+				</tr>
+				<tr>
+					<td>Test 1</td>
+					<td>Test 2</td>
+					<td>Test 3</td>
+					<td>Test 4</td>
+					<td>Test 5</td>
+				</tr>
+				<tr>
+					<td>Test 1</td>
+					<td>Test 2</td>
+					<td>Test 3</td>
+					<td>Test 4</td>
+					<td>Test 5</td>
+				</tr>
+			</table>
+			<p>Recommendation here</p>
+		</div>
+	</div>
+</div>s
