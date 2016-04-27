@@ -35,12 +35,11 @@ app.run(function ($rootScope, $location, Session){
 });
 
 app.controller("LoginCtrl", function ($scope) {
-    $scope.clientid = "testclientid";
-    $scope.website = "3lol4";
+    $scope.clientid = "227KY6";
+    //$scope.website = "3lol4";
 
     $scope.authenticate = function () {
-        var url = "https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=" + $scope.clientid +
-            "&redirect_uri=http%3A%2F%2F" + $scope.website + "%2Ffitbit_auth&scope=activity%20heartrate&expires_in=2592000";
+        var url = "https://www.fitbit.com/oauth2/authorize?client_id=" + $scope.clientid + "&response_type=token&scope=activity%20profile&expires_in=2592000";
         // debugging purposes
         console.log(url);
 
@@ -122,6 +121,7 @@ app.controller("DashboardCtrl", function ($rootscope, $scope, $http, $location, 
                     Authorization: "Bearer" + Session.accessToken
                 }
             }).then(function(response) {
+                console.log(data)
                 $scope.date = response.data.activities-heart.dateTime;
                 $scope.data = response.data.activities-heart.value.heartRateZones;
             });
