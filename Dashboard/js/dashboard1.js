@@ -122,7 +122,7 @@ app.controller("DashboardCtrl", function ($rootscope, $scope, $http, $location, 
                     Authorization: "Bearer" + Session.accessToken
                 }
             }).then(function(response) {
-                console.log(data)
+                console.log(data);
                 $scope.date = response.data.activities-heart.dateTime;
                 $scope.data = response.data.activities-heart.value.heartRateZones;
             });
@@ -144,7 +144,7 @@ app.factory("Session", function () {
     }
 
     console.log(access_token)
-    
+
     return {
         accessToken:access_token,
         expiresIn: expires_in,
