@@ -5,6 +5,7 @@
 var app = angular.module("HealthApp", ["ui.router"]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
+    // state machine that controls which template to
     $stateProvider
         .state('login', {
             url: '/',
@@ -24,6 +25,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 });
 
 app.run(function ($rootScope, $location, Session){
+    // checks if user is logged in to FItbit
    $rootScope.isLoggedIn = function () {
        if (Session.accessToken == null || Session.accessToken === 0) {
            $location.path("/");
